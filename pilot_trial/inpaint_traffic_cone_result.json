@@ -1,0 +1,26 @@
+{
+  "status": "development-only technical inpainting trial; no detector result",
+  "root_id": "16pro_187",
+  "source_file": "16pro_187_pristine_512.png",
+  "operation_mask_file": "16pro_187_operation_mask_512.png",
+  "edited_file": "16pro_187_ai_edit_traffic_cone.png",
+  "model_repository": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "model_revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "model_variant": "fp16",
+  "compute_dtype": "float32 (weights loaded from fp16 files)",
+  "diffusers_version": "0.35.2",
+  "torch_version": "2.9.1",
+  "device": "mps",
+  "prompt": "A realistic photograph of a black scooter parked on patterned pavement. A bright orange traffic cone stands on the pavement to the left of the scooter.",
+  "seed": 20261109,
+  "inference_steps": 20,
+  "guidance_scale": 7.5,
+  "strength": 1.0,
+  "safety_flags": [
+    false
+  ],
+  "elapsed_seconds": 104.32489929200165,
+  "output_sha256": "62e192b92992f1d3e476be4efba77213bae261b824f65c7dfb66b2d6652c6cc5",
+  "fraction_outside_mask_with_rgb_difference_gt_2": 0.8684077559527569,
+  "mean_absolute_rgb_difference_outside_mask": 12.67770900440009
+}

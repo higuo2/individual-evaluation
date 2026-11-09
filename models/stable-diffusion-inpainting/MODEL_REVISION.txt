@@ -1,0 +1,2 @@
+stable-diffusion-v1-5/stable-diffusion-inpainting
+8a4288a76071f7280aedbdb3253bdb9e9d5d84bb

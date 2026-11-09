@@ -1,0 +1,13 @@
+{
+  "detector": "clip",
+  "device": "mps",
+  "input": "pilot_working_png; development-only pristine derivatives",
+  "preprocessing": "RGB; CenterCrop(224); ToTensor; CLIP normalization; no resize",
+  "score": "sigmoid(logit); larger means more likely synthetic",
+  "checkpoints": {
+    "clip_backbone_sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    "clip_head_sha256": "477100745713bcc957beb2b40859536859b6483fd6301b3b9293151b194c7847"
+  },
+  "count": 20,
+  "purpose": "inference smoke test only; no performance estimate"
+}

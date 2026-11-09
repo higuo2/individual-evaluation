@@ -1,0 +1,13 @@
+test_area_and_paired_location (test_analyze.AnalysisTests.test_area_and_paired_location) ... ok
+test_threshold_uses_validation_and_never_exceeds_target (test_analyze.AnalysisTests.test_threshold_uses_validation_and_never_exceeds_target) ... ok
+test_area_boundaries (test_fyp_eval.MeasurementTests.test_area_boundaries) ... ok
+test_browser_png_mask_is_accepted_only_if_opaque_monochrome (test_fyp_eval.MeasurementTests.test_browser_png_mask_is_accepted_only_if_opaque_monochrome) ... ok
+test_empty_and_one_pixel_masks (test_fyp_eval.MeasurementTests.test_empty_and_one_pixel_masks) ... ok
+test_geometry_rejected (test_fyp_eval.MeasurementTests.test_geometry_rejected) ... ok
+test_location (test_fyp_eval.MeasurementTests.test_location) ... ok
+test_manifest_and_real_image_measurement (test_fyp_eval.MeasurementTests.test_manifest_and_real_image_measurement) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.028s
+
+OK

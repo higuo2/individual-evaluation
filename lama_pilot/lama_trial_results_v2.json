@@ -1,0 +1,50 @@
+[
+  {
+    "root_id": "16pro_187",
+    "condition": "foreground_mirror_v2",
+    "status": "development-only editor qualification; visual decision pending",
+    "source_file": "pilot_working_png/16pro_187.png",
+    "operation_mask_file": "16pro_187_foreground_mirror_v2_operation_mask.png",
+    "raw_file": "16pro_187_foreground_mirror_v2_lama_raw.png",
+    "localized_file": "16pro_187_foreground_mirror_v2_lama_local.png",
+    "source_sha256": "aa7eb75e19a716c0369e2782e3d02e5d2bb29bfe373e660d299ca8fb9a4ce47a",
+    "mask_sha256": "f4e346d0dc317b845dccf8f9d378da9a3bc446b9a1017484fd6afd7c8d10bcba",
+    "checkpoint_sha256": "344c77bbcb158f17dd143070d1e789f38a66c04202311ae3a258ef66667a9ea9",
+    "raw_sha256": "597ab3cd664a2fe0f0abc75b1171ee72e2b81245a9967a55c18e390293f876fa",
+    "localized_sha256": "597ab3cd664a2fe0f0abc75b1171ee72e2b81245a9967a55c18e390293f876fa",
+    "model": "IOPaint published big-lama.pt TorchScript (pretrained LaMa)",
+    "device": "cpu",
+    "torch_version": "2.9.1",
+    "geometry": [
+      1600,
+      1200
+    ],
+    "operation_fraction": 0.016349479166666667,
+    "raw_outside_mask_changed_fraction_rgb_mean_gt_2": 0.0,
+    "localized_outside_mask_changed_fraction_rgb_mean_gt_2": 0.0
+  },
+  {
+    "root_id": "16pro_187",
+    "condition": "background_cones_v2",
+    "status": "development-only editor qualification; visual decision pending",
+    "source_file": "pilot_working_png/16pro_187.png",
+    "operation_mask_file": "16pro_187_background_cones_v2_operation_mask.png",
+    "raw_file": "16pro_187_background_cones_v2_lama_raw.png",
+    "localized_file": "16pro_187_background_cones_v2_lama_local.png",
+    "source_sha256": "aa7eb75e19a716c0369e2782e3d02e5d2bb29bfe373e660d299ca8fb9a4ce47a",
+    "mask_sha256": "d43106c868dc4df968e6a5b21c8c3ae0d7a43bc7ac29e8a284294b85701c8d92",
+    "checkpoint_sha256": "344c77bbcb158f17dd143070d1e789f38a66c04202311ae3a258ef66667a9ea9",
+    "raw_sha256": "63062ebeeffe97a5c325aeb1c8e099776fd8aba7c1299dc96a918e0d40eeed8f",
+    "localized_sha256": "63062ebeeffe97a5c325aeb1c8e099776fd8aba7c1299dc96a918e0d40eeed8f",
+    "model": "IOPaint published big-lama.pt TorchScript (pretrained LaMa)",
+    "device": "cpu",
+    "torch_version": "2.9.1",
+    "geometry": [
+      1600,
+      1200
+    ],
+    "operation_fraction": 0.006705729166666666,
+    "raw_outside_mask_changed_fraction_rgb_mean_gt_2": 0.0,
+    "localized_outside_mask_changed_fraction_rgb_mean_gt_2": 0.0
+  }
+]

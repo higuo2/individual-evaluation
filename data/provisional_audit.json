@@ -1,0 +1,12 @@
+{
+  "roots": 300,
+  "samples": 0,
+  "split_counts": {
+    "validation": 60,
+    "development": 180,
+    "test": 60
+  },
+  "missing_split_root_ids": [],
+  "errors": [],
+  "pass": true
+}

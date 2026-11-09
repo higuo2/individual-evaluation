@@ -1,0 +1,26 @@
+{
+  "root_id": "16pro_187",
+  "source": "pilot_working_png/16pro_187.png",
+  "foreground_annotation": "pilot_working_png/16pro_187_foreground.png",
+  "purpose": "development-only editor qualification; no benchmark acceptance yet",
+  "regions": [
+    {
+      "label": "foreground_mirror",
+      "mask": "16pro_187_foreground_mirror_operation_mask.png",
+      "target": "remove visible object(s) with pretrained LaMa",
+      "r": 0.004502604166666667,
+      "area_band": "(0,0.02]",
+      "overlap": 0.7956043956043956,
+      "location": "foreground"
+    },
+    {
+      "label": "background_cones",
+      "mask": "16pro_187_background_cones_operation_mask.png",
+      "target": "remove visible object(s) with pretrained LaMa",
+      "r": 0.004202604166666667,
+      "area_band": "(0,0.02]",
+      "overlap": 0.0,
+      "location": "background"
+    }
+  ]
+}

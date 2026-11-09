@@ -1,0 +1,20 @@
+# Local Python environment and bytecode
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.Python
+
+# macOS
+.DS_Store
+
+# Downloaded checkpoints. GitHub rejects any file larger than 100 MB,
+# and these weights can be fetched again from their official sources.
+model_cache/
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.ckpt
+models/**/*.pt
+models/**/*.pth
+models/**/.cache/
+third_party/**/weights/

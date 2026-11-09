@@ -1,0 +1,23 @@
+{
+  "root_id": "16pro_187",
+  "purpose": "revised development-only LaMa qualification",
+  "reason": "v1 left a mirror and yellow cone tips visible in masked output",
+  "regions": [
+    {
+      "label": "foreground_mirror_v2",
+      "mask": "16pro_187_foreground_mirror_v2_operation_mask.png",
+      "r": 0.016349479166666667,
+      "area_band": "(0,0.02]",
+      "overlap": 0.6454397757318977,
+      "location": "foreground"
+    },
+    {
+      "label": "background_cones_v2",
+      "mask": "16pro_187_background_cones_v2_operation_mask.png",
+      "r": 0.006705729166666666,
+      "area_band": "(0,0.02]",
+      "overlap": 0.0,
+      "location": "background"
+    }
+  ]
+}

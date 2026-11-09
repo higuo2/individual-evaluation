@@ -1,0 +1,12 @@
+{
+  "root_id": "16pro_199",
+  "status": "development-only technical input; no AI edit generated yet",
+  "pristine_path": "16pro_199_pristine_512.png",
+  "operation_mask_path": "16pro_199_operation_mask_512.png",
+  "image_width": 512,
+  "image_height": 384,
+  "mask_r": 0.045664469401041664,
+  "mask_area_band": "(0.02,0.05]",
+  "foreground_label": "not_assigned",
+  "prompt_proposal": "A natural photograph of watermelon slices on a white plate, with one central slice replaced by a piece of yellow pineapple."
+}

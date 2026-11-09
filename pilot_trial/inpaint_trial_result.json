@@ -1,0 +1,26 @@
+{
+  "status": "development-only technical inpainting trial; no detector result",
+  "root_id": "16pro_199",
+  "source_file": "16pro_199_pristine_512.png",
+  "operation_mask_file": "16pro_199_operation_mask_512.png",
+  "edited_file": "16pro_199_ai_edit_trial.png",
+  "model_repository": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "model_revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "model_variant": "fp16",
+  "compute_dtype": "float32 (weights loaded from fp16 files)",
+  "diffusers_version": "0.35.2",
+  "torch_version": "2.9.1",
+  "device": "mps",
+  "prompt": "A natural photograph of watermelon slices on a white plate, with one central slice replaced by a piece of yellow pineapple.",
+  "seed": 20261109,
+  "inference_steps": 20,
+  "guidance_scale": 7.5,
+  "strength": 1.0,
+  "safety_flags": [
+    false
+  ],
+  "elapsed_seconds": 118.58123075000185,
+  "output_sha256": "b77cf765a85d93c3ed9077196a01ecb17c1a857e768d0a20d5f9aec8eae34f35",
+  "fraction_outside_mask_with_rgb_difference_gt_2": 0.6396152001279113,
+  "mean_absolute_rgb_difference_outside_mask": 5.27096235498943
+}

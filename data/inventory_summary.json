@@ -1,0 +1,12 @@
+{
+  "archive_photo_counts": {
+    "14pro_100张.zip": 100,
+    "16pro_200张.zip": 200
+  },
+  "readable_photos": 300,
+  "decode_errors": [],
+  "exact_duplicate_pairs": 0,
+  "near_duplicate_candidate_pairs": 0,
+  "candidate_clusters_with_multiple_photos": 0,
+  "status": "inventory_complete; duplicate candidates require human review; splits not frozen"
+}

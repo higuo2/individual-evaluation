@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-09",
+  "review_basis": "User stated all 25 selected similar-scene pairs were manually reviewed and confirmed similar",
+  "confirmed_pairs": 25,
+  "source_roots": 300,
+  "split_counts": {
+    "validation": 60,
+    "development": 180,
+    "test": 60
+  },
+  "pilot_foreground_status_counts": {
+    "valid_owner_annotation": 14,
+    "uncertain": 6
+  },
+  "frozen_manifest": "frozen_root_manifest_v1.csv",
+  "frozen_manifest_sha256": "9dbff7166204ee9bd8d01e69d5630b08da862a52f139805ce72a18329fd63db9",
+  "reviewed_pairs_sha256": "ca3721b8f1c478fec53104384cde0ef28808f7407ae76f6df89a0989f3af41d1",
+  "annotation_audit_sha256": "693eb7bf910c2a02d86c77d1d5482f1141bdab3b284d84e428fb148e10a6abc4",
+  "audit": {
+    "roots": 300,
+    "samples": 0,
+    "split_counts": {
+      "validation": 60,
+      "development": 180,
+      "test": 60
+    },
+    "missing_split_root_ids": [],
+    "errors": [],
+    "pass": true
+  },
+  "caveat": "Foreground masks are 1600-pixel working derivatives, not full-resolution root masks; use working_root_manifest.csv for development measurements"
+}

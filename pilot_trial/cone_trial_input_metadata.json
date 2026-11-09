@@ -1,0 +1,9 @@
+{
+  "root_id": "16pro_187",
+  "status": "development-only technical input; no foreground label",
+  "pristine_path": "16pro_187_pristine_512.png",
+  "mask_path": "16pro_187_operation_mask_512.png",
+  "r": 0.03363037109375,
+  "area_band": "(0.02,0.05]",
+  "prompt_proposal": "A realistic photo of a black scooter on paved ground with a small orange traffic cone to its left."
+}

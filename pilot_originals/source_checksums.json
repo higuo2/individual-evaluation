@@ -1,0 +1,102 @@
+[
+  {
+    "root_id": "14pro_005",
+    "path": "individual_evaluation/pilot_originals/14pro_005.jpg",
+    "sha256": "6cd6fc35f1d18327d61958d904e3b5bab9c7f65902b8017b408d8868985176e6"
+  },
+  {
+    "root_id": "14pro_018",
+    "path": "individual_evaluation/pilot_originals/14pro_018.jpg",
+    "sha256": "388074837b4a18740583a718fcdea4b943d0881f7dc580c74293677334d243f4"
+  },
+  {
+    "root_id": "14pro_023",
+    "path": "individual_evaluation/pilot_originals/14pro_023.jpg",
+    "sha256": "cdd33c370590e6f561d692fa0336b01f9a3c13b5f607a5985aa3a7c1fe964849"
+  },
+  {
+    "root_id": "14pro_046",
+    "path": "individual_evaluation/pilot_originals/14pro_046.jpg",
+    "sha256": "b727129eaeb398380e619b820a2576d7dbc2506c83de0b60449ef742c79e552b"
+  },
+  {
+    "root_id": "14pro_067",
+    "path": "individual_evaluation/pilot_originals/14pro_067.jpg",
+    "sha256": "c4221962203e0b566a90d2dcbfbf37dc6a97de6173ecefeea2cc16ca484aa6ad"
+  },
+  {
+    "root_id": "14pro_070",
+    "path": "individual_evaluation/pilot_originals/14pro_070.jpg",
+    "sha256": "4e09e3abeac7ff2aa8beb3aa8be7983fe8e9388298b04432b03af6adb2f7b700"
+  },
+  {
+    "root_id": "14pro_074",
+    "path": "individual_evaluation/pilot_originals/14pro_074.jpg",
+    "sha256": "1f23ef496d9550140aedcac5f4f77405f2d7ee667a7d85efea441c703dc79a88"
+  },
+  {
+    "root_id": "14pro_098",
+    "path": "individual_evaluation/pilot_originals/14pro_098.jpg",
+    "sha256": "8ee0e95505022c1cdd80f77a4959527d9f2e2a4218ed9949c4f8d2a60e68d14f"
+  },
+  {
+    "root_id": "16pro_019",
+    "path": "individual_evaluation/pilot_originals/16pro_019.jpg",
+    "sha256": "9b9c17b3bcb90636c9b0400141c8df2a64af86d3f7da5d81771d329b07f6feaa"
+  },
+  {
+    "root_id": "16pro_025",
+    "path": "individual_evaluation/pilot_originals/16pro_025.jpg",
+    "sha256": "bf31b23415e6ba052a941bf53fd039f59b0a6ceca9dce06cca6f47ecc9845373"
+  },
+  {
+    "root_id": "16pro_073",
+    "path": "individual_evaluation/pilot_originals/16pro_073.jpg",
+    "sha256": "865216663ec1a3c69cd6401aef6750621078e2873178287118865788ed3bf078"
+  },
+  {
+    "root_id": "16pro_083",
+    "path": "individual_evaluation/pilot_originals/16pro_083.jpg",
+    "sha256": "f058f06d5f9d7fe4c5df104b4f4bdb9c5218b40c93d13bb8e223889892bfa5c8"
+  },
+  {
+    "root_id": "16pro_107",
+    "path": "individual_evaluation/pilot_originals/16pro_107.jpg",
+    "sha256": "13182d1e40828c0cde2fb44a588514cd35f39c62122fb50657dd977850cbd3b0"
+  },
+  {
+    "root_id": "16pro_123",
+    "path": "individual_evaluation/pilot_originals/16pro_123.jpg",
+    "sha256": "9cb959124e6cba0e87d70fbcc7fde7227e04fca98f27dc2ac5c47804cdb09d24"
+  },
+  {
+    "root_id": "16pro_153",
+    "path": "individual_evaluation/pilot_originals/16pro_153.jpg",
+    "sha256": "3e806206b281744d1939db11ea7a93432e6e90f659af35914752f4a8bba8efdc"
+  },
+  {
+    "root_id": "16pro_162",
+    "path": "individual_evaluation/pilot_originals/16pro_162.jpg",
+    "sha256": "42e62327c82a7ee6355dd33b41674dacec485a2edf8ff625d87de4dac6ca6d63"
+  },
+  {
+    "root_id": "16pro_166",
+    "path": "individual_evaluation/pilot_originals/16pro_166.jpg",
+    "sha256": "0d40c6cd51d889d3e2438c7b79f900dc6afdf9cc0913ac0fff6b6f6a89b2f67b"
+  },
+  {
+    "root_id": "16pro_187",
+    "path": "individual_evaluation/pilot_originals/16pro_187.jpg",
+    "sha256": "92eefe24961dcb726b06a67ee3a32ae3ea9eea9bb773d5176615ceefc687ec69"
+  },
+  {
+    "root_id": "16pro_193",
+    "path": "individual_evaluation/pilot_originals/16pro_193.jpg",
+    "sha256": "4a2a708dcd2e9173787309a387a61e54653154f21eebd92b22602acdf11ca375"
+  },
+  {
+    "root_id": "16pro_199",
+    "path": "individual_evaluation/pilot_originals/16pro_199.jpg",
+    "sha256": "e529b9cf0bfb69726eb21a0451bb2310bba9ee44675232fd259374b6bc8eda18"
+  }
+]

@@ -1,0 +1,21 @@
+root_id,working_image,foreground_mask,status,primary_object,reviewer,review_note
+14pro_005,14pro_005.png,14pro_005_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+14pro_018,14pro_018.png,14pro_018_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+14pro_023,14pro_023.png,14pro_023_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+14pro_046,14pro_046.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+14pro_067,14pro_067.png,14pro_067_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+14pro_070,14pro_070.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+14pro_074,14pro_074.png,14pro_074_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+14pro_098,14pro_098.png,14pro_098_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_019,16pro_019.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+16pro_025,16pro_025.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+16pro_073,16pro_073.png,16pro_073_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_083,16pro_083.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+16pro_107,16pro_107.png,16pro_107_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_123,16pro_123.png,16pro_123_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_153,16pro_153.png,,uncertain,,photo owner,Owner marked uncertain via filename; no reason supplied
+16pro_162,16pro_162.png,16pro_162_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_166,16pro_166.png,16pro_166_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_187,16pro_187.png,16pro_187_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_193,16pro_193.png,16pro_193_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited
+16pro_199,16pro_199.png,16pro_199_foreground.png,valid_owner_annotation,,photo owner,Owner-supplied mask; format and dimensions verified; semantic boundary not independently audited

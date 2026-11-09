@@ -1,0 +1,16 @@
+{
+  "purpose": "frozen validation pristine control scoring only",
+  "detector": "cnn",
+  "device": "mps",
+  "manifest": "frozen_root_manifest_v1.csv",
+  "manifest_sha256": "9dbff7166204ee9bd8d01e69d5630b08da862a52f139805ce72a18329fd63db9",
+  "canonical_conversion": "EXIF transpose; RGB; thumbnail max side 1600 using PIL Lanczos; PNG-equivalent pixels",
+  "detector_preprocessing": "RGB; no crop or resize; ToTensor; ImageNet normalization",
+  "checkpoints": {
+    "cnn_head_and_backbone_sha256": "3533f3e58a3b82215f21197f2faf4e99b911ec42a4a6e2d7823e04d5f3fd245a"
+  },
+  "score_direction": "sigmoid(logit); larger means more likely synthetic",
+  "validation_roots": 60,
+  "score_file": "validation_pristine_scores_cnn.csv",
+  "score_file_sha256": "98f496cca3de218a240e18cd3255ba1de94a2edb910fa462d2bca0f2d737a391"
+}

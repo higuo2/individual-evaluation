@@ -1,0 +1,10 @@
+{
+  "status": "development-only postprocessing trial; not accepted as benchmark sample",
+  "raw_generated_image": "16pro_199_ai_edit_trial.png",
+  "local_composite": "16pro_199_local_composite_trial.png",
+  "method": "diffusers VaeImageProcessor.apply_overlay",
+  "outside_mask_changed_fraction_gt_2": 0.0,
+  "inside_mask_changed_fraction_gt_2": 0.9895299621296503,
+  "mean_absolute_rgb_difference_inside": 29.173126902799435,
+  "quality_note": "Semantic pineapple replacement not visually clear in the raw trial; manual review required"
+}

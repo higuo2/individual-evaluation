@@ -1,0 +1,8 @@
+[submodule "third_party/CNNDetection"]
+	path = third_party/CNNDetection
+	url = https://github.com/PeterWang512/CNNDetection.git
+	ignore = untracked
+[submodule "third_party/UniversalFakeDetect"]
+	path = third_party/UniversalFakeDetect
+	url = https://github.com/WisconsinAIVision/UniversalFakeDetect.git
+	ignore = untracked

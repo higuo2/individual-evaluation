@@ -1,0 +1,1 @@
+sample_id,root_id,split,edited_image_path,operation_mask_path,edit_tool,edit_tool_version,edit_instruction,edit_settings,target_area_band,actual_r,actual_area_band,foreground_overlap,location_label,quality_status,exclusion_reason

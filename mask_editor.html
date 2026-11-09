@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FYP mask editor · development pilot</title>
+<style>
+  :root { font-family: system-ui, sans-serif; color: #18202b; background: #f4f6f8; }
+  body { max-width: 1120px; margin: 24px auto; padding: 0 16px; }
+  h1 { font-size: 1.4rem; margin-bottom: 6px; }
+  p { line-height: 1.45; }
+  .panel { background: white; border: 1px solid #d6dce3; border-radius: 12px;
+           padding: 14px; margin: 12px 0; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  label { display: inline-flex; align-items: center; gap: 6px; }
+  button, select, input { font: inherit; }
+  button { padding: 7px 12px; border: 1px solid #9ca8b7; border-radius: 7px;
+           background: #fff; cursor: pointer; }
+  button.primary { background: #175cd3; border-color: #175cd3; color: white; }
+  #stage { position: relative; width: fit-content; max-width: 100%; line-height: 0;
+           border: 1px solid #b6bfca; touch-action: none; }
+  #photo { display: block; width: min(100%, 1000px); height: auto; }
+  #overlay { position: absolute; inset: 0; width: 100%; height: 100%; cursor: crosshair;
+             touch-action: none; }
+  small { color: #4b5563; }
+  #status { white-space: pre-wrap; }
+</style>
+</head>
+<body>
+<h1>FYP mask editor · development pilot</h1>
+<p>本工具只在本机浏览器处理图片。请先打开 <code>pilot_working_png</code> 中的原图，<strong>先画并保存 foreground mask</strong>；之后才规划和绘制 operation mask。不要看已编辑图片来决定前景。</p>
+<div class="panel controls">
+  <label>原图 <input id="file" type="file" accept="image/png"></label>
+  <label>标签 <select id="kind"><option value="foreground">Foreground</option><option value="operation">Operation / edit</option></select></label>
+  <label>画笔直径 <input id="brush" type="range" min="0.2" max="15" step="0.1" value="2"><span id="brushValue">2%</span></label>
+  <label><input id="erase" type="checkbox">橡皮擦</label>
+  <button id="clear">清空当前 mask</button>
+  <button id="save" class="primary">保存黑白 PNG mask</button>
+</div>
+<div class="panel"><div id="stage"><canvas id="photo"></canvas><canvas id="overlay"></canvas></div></div>
+<div class="panel"><div id="status">尚未打开图片。</div><small>白色代表所选区域，黑色代表其余区域。保存的 mask 与所载工作图片像素尺寸相同。此工具不生成 AI 编辑图，也不自动认定所画前景正确。</small></div>
+<script>
+const fileInput = document.getElementById('file');
+const photo = document.getElementById('photo');
+const overlay = document.getElementById('overlay');
+const mask = document.createElement('canvas');
+const photoCtx = photo.getContext('2d');
+const overlayCtx = overlay.getContext('2d');
+const maskCtx = mask.getContext('2d', {willReadFrequently: true});
+const status = document.getElementById('status');
+const brush = document.getElementById('brush');
+let rootName = '', drawing = false, previous = null;
+
+function resetMask() {
+  if (!mask.width) return;
+  maskCtx.globalCompositeOperation = 'source-over';
+  maskCtx.fillStyle = 'black';
+  maskCtx.fillRect(0, 0, mask.width, mask.height);
+  overlayCtx.clearRect(0, 0, overlay.width, overlay.height);
+  showStatus();
+}
+function showStatus() {
+  if (!mask.width) return;
+  const pixels = maskCtx.getImageData(0, 0, mask.width, mask.height).data;
+  let white = 0;
+  for (let i = 0; i < pixels.length; i += 4) if (pixels[i] > 127) white++;
+  status.textContent = `${rootName} · ${mask.width} × ${mask.height} · 当前白色区域 ${(100 * white / (mask.width * mask.height)).toFixed(2)}%`;
+}
+function position(event) {
+  const rect = overlay.getBoundingClientRect();
+  return {x: (event.clientX - rect.left) * overlay.width / rect.width,
+          y: (event.clientY - rect.top) * overlay.height / rect.height};
+}
+function drawSegment(from, to) {
+  const diameter = Math.min(mask.width, mask.height) * Number(brush.value) / 100;
+  const erase = document.getElementById('erase').checked;
+  for (const [context, color] of [[maskCtx, erase ? 'black' : 'white'],
+                                  [overlayCtx, 'rgba(235, 43, 43, 0.52)']]) {
+    context.save();
+    context.globalCompositeOperation = (context === overlayCtx && erase) ? 'destination-out' : 'source-over';
+    context.strokeStyle = color;
+    context.fillStyle = color;
+    context.lineWidth = diameter;
+    context.lineCap = 'round';
+    context.lineJoin = 'round';
+    context.beginPath();
+    context.moveTo(from.x, from.y);
+    context.lineTo(to.x, to.y);
+    context.stroke();
+    context.beginPath();
+    context.arc(to.x, to.y, diameter / 2, 0, 2 * Math.PI);
+    context.fill();
+    context.restore();
+  }
+}
+fileInput.addEventListener('change', async () => {
+  const file = fileInput.files[0];
+  if (!file) return;
+  if (file.type !== 'image/png') { status.textContent = '请使用 pilot_working_png 中的 PNG 图片。'; return; }
+  const bitmap = await createImageBitmap(file);
+  rootName = file.name.replace(/\.png$/i, '');
+  for (const canvas of [photo, overlay, mask]) { canvas.width = bitmap.width; canvas.height = bitmap.height; }
+  photoCtx.drawImage(bitmap, 0, 0);
+  resetMask();
+});
+overlay.addEventListener('pointerdown', event => {
+  if (!mask.width) return;
+  overlay.setPointerCapture(event.pointerId);
+  drawing = true; previous = position(event);
+  drawSegment(previous, previous);
+});
+overlay.addEventListener('pointermove', event => {
+  if (!drawing) return;
+  const current = position(event); drawSegment(previous, current); previous = current;
+});
+function endStroke() { if (drawing) { drawing = false; showStatus(); } }
+overlay.addEventListener('pointerup', endStroke);
+overlay.addEventListener('pointercancel', endStroke);
+document.getElementById('clear').addEventListener('click', resetMask);
+brush.addEventListener('input', () => document.getElementById('brushValue').textContent = `${brush.value}%`);
+document.getElementById('save').addEventListener('click', () => {
+  if (!mask.width) return;
+  mask.toBlob(blob => {
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `${rootName}_${document.getElementById('kind').value}.png`;
+    link.click();
+    setTimeout(() => URL.revokeObjectURL(url), 30000);
+  }, 'image/png');
+});
+</script>
+</body>
+</html>

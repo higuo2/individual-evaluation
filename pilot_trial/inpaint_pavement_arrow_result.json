@@ -1,0 +1,27 @@
+{
+  "status": "development-only technical inpainting trial; no detector result",
+  "root_id": "16pro_187",
+  "source_file": "16pro_187_pristine_512.png",
+  "operation_mask_file": "16pro_187_operation_mask_512.png",
+  "edited_file": "16pro_187_ai_edit_pavement_arrow.png",
+  "model_repository": "stable-diffusion-v1-5/stable-diffusion-inpainting",
+  "model_revision": "8a4288a76071f7280aedbdb3253bdb9e9d5d84bb",
+  "model_variant": "fp16",
+  "compute_dtype": "float32 (weights loaded from fp16 files)",
+  "diffusers_version": "0.35.2",
+  "torch_version": "2.9.1",
+  "device": "mps",
+  "prompt": "A realistic photograph of a driveway with a clearly visible bright yellow painted arrow on the pavement to the left of the scooter.",
+  "seed": 20261109,
+  "inference_steps": 40,
+  "guidance_scale": 8.0,
+  "strength": 1.0,
+  "padding_mask_crop": 128,
+  "safety_flags": [
+    false
+  ],
+  "elapsed_seconds": 233.12143099999957,
+  "output_sha256": "2e1d95e37b93a9e34b64f51da7ef8c3c786328981b08d0000c01fa30d44f46e6",
+  "fraction_outside_mask_with_rgb_difference_gt_2": 0.0,
+  "mean_absolute_rgb_difference_outside_mask": 0.0
+}
